@@ -6,12 +6,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
 Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Date "2020-01-25"
+Rev "0.9.0"
+Comp "BME-VIK"
+Comment1 "Department of Measurement and Information Systems"
+Comment2 "Budapest University of Technology and Economics"
 Comment3 ""
-Comment4 ""
+Comment4 "Designed by: Peter Gyulai (BSc)"
 $EndDescr
 $EndSCHEMATC

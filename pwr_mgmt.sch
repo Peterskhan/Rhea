@@ -5,14 +5,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 6
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "Rhea - Power Management Module"
+Date "2020-01-25"
+Rev "0.9.0"
+Comp "BME-VIK"
+Comment1 "Department of Measurement and Information Systems"
+Comment2 "Budapest University of Technology and Economics"
 Comment3 ""
-Comment4 ""
+Comment4 "Designed by: Peter Gyulai (BSc)"
 $EndDescr
 $Comp
 L Device:D_Schottky_ALT D?
@@ -73,10 +73,10 @@ Text HLabel 7575 2250 2    50   Output ~ 0
 Text HLabel 6500 3925 2    50   BiDi ~ 0
 I2C
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0113
 U 1 1 5E37A880
 P 5325 2950
-F 0 "#PWR?" H 5325 2750 50  0001 C CNN
+F 0 "#PWR0113" H 5325 2750 50  0001 C CNN
 F 1 "GNDPWR" H 5329 2796 50  0000 C CNN
 F 2 "" H 5325 2900 50  0001 C CNN
 F 3 "" H 5325 2900 50  0001 C CNN
@@ -95,10 +95,10 @@ F 3 "~" H 3550 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0114
 U 1 1 5E37DC93
 P 3550 1450
-F 0 "#PWR?" H 3550 1250 50  0001 C CNN
+F 0 "#PWR0114" H 3550 1250 50  0001 C CNN
 F 1 "GNDPWR" H 3554 1296 50  0000 C CNN
 F 2 "" H 3550 1400 50  0001 C CNN
 F 3 "" H 3550 1400 50  0001 C CNN
@@ -137,10 +137,10 @@ F 3 "~" V 6350 2160 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0115
 U 1 1 5E37FB01
 P 6350 2950
-F 0 "#PWR?" H 6350 2750 50  0001 C CNN
+F 0 "#PWR0115" H 6350 2750 50  0001 C CNN
 F 1 "GNDPWR" H 6354 2796 50  0000 C CNN
 F 2 "" H 6350 2900 50  0001 C CNN
 F 3 "" H 6350 2900 50  0001 C CNN
@@ -160,10 +160,10 @@ Wire Wire Line
 	4425 2650 4425 1950
 Connection ~ 4425 1450
 $Comp
-L power:GNDD #PWR?
+L power:GNDD #PWR0116
 U 1 1 5E382DE3
 P 4550 2950
-F 0 "#PWR?" H 4550 2700 50  0001 C CNN
+F 0 "#PWR0116" H 4550 2700 50  0001 C CNN
 F 1 "GNDD" H 4554 2795 50  0000 C CNN
 F 2 "" H 4550 2950 50  0001 C CNN
 F 3 "" H 4550 2950 50  0001 C CNN
@@ -188,10 +188,10 @@ $EndComp
 Wire Wire Line
 	4200 2250 4625 2250
 $Comp
-L power:GNDA #PWR?
+L power:GNDA #PWR0117
 U 1 1 5E38609A
 P 3550 2925
-F 0 "#PWR?" H 3550 2675 50  0001 C CNN
+F 0 "#PWR0117" H 3550 2675 50  0001 C CNN
 F 1 "GNDA" H 3555 2752 50  0000 C CNN
 F 2 "" H 3550 2925 50  0001 C CNN
 F 3 "" H 3550 2925 50  0001 C CNN
@@ -201,10 +201,10 @@ $EndComp
 Wire Wire Line
 	4200 2550 4200 2925
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0118
 U 1 1 5E386F12
 P 7600 1750
-F 0 "#PWR?" H 7600 1550 50  0001 C CNN
+F 0 "#PWR0118" H 7600 1550 50  0001 C CNN
 F 1 "GNDPWR" H 7604 1596 50  0000 C CNN
 F 2 "" H 7600 1700 50  0001 C CNN
 F 3 "" H 7600 1700 50  0001 C CNN
@@ -378,4 +378,15 @@ Wire Wire Line
 Wire Wire Line
 	2575 1150 3550 1150
 Connection ~ 3550 1150
+$Comp
+L Regulator_Switching:TLV62568DBV U?
+U 1 1 5E379EA0
+P 9325 1550
+F 0 "U?" H 9325 1917 50  0000 C CNN
+F 1 "TLV62568DBV" H 9325 1826 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9375 1300 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv62568.pdf" H 9075 2000 50  0001 C CNN
+	1    9325 1550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
