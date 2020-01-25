@@ -15,15 +15,19 @@ Comment3 ""
 Comment4 "Designed by: Peter Gyulai (BSc)"
 $EndDescr
 $Sheet
-S 1600 3050 1400 1000
+S 1600 3050 1400 1250
 U 5E2B3D45
 F0 "Power Management" 50
 F1 "pwr_mgmt.sch" 50
-F2 "~CHARGING" O R 3000 3925 50 
-F3 "POWER_ON" O R 3000 3800 50 
+F2 "~CHARGING" O R 3000 4025 50 
+F3 "POWER_ON" O R 3000 3925 50 
 F4 "USB_5V" I L 1600 3150 50 
 F5 "I2C" B R 3000 3425 50 
 F6 "POWER_OUT" O R 3000 3175 50 
+F7 "USB_DATA+" O R 3000 4125 50 
+F8 "USB_DATA-" O R 3000 4225 50 
+F9 "USB_DATAP_IN" I L 1600 3350 50 
+F10 "USB_DATAN_IN" I L 1600 3450 50 
 $EndSheet
 $Comp
 L Connector:USB_B_Micro J?
@@ -39,25 +43,25 @@ $EndComp
 $Comp
 L Graphic:SYM_Flash_Large #SYM?
 U 1 1 5E2D7EF8
-P 2275 3550
-F 0 "#SYM?" V 2125 3550 50  0001 C CNN
-F 1 "SYM_Flash_Large" V 2405 3550 50  0001 C CNN
-F 2 "" H 2265 3460 50  0001 C CNN
-F 3 "~" H 2675 3450 50  0001 C CNN
-	1    2275 3550
+P 2300 3675
+F 0 "#SYM?" V 2150 3675 50  0001 C CNN
+F 1 "SYM_Flash_Large" V 2430 3675 50  0001 C CNN
+F 2 "" H 2290 3585 50  0001 C CNN
+F 3 "~" H 2700 3575 50  0001 C CNN
+	1    2300 3675
 	1    0    0    -1  
 $EndComp
-Text Notes 1600 4275 0    50   ~ 0
+Text Notes 1600 4500 0    50   ~ 0
 Overcurrent & Overvoltage protection
-Text Notes 1600 4475 0    50   ~ 0
+Text Notes 1600 4700 0    50   ~ 0
 Buck Converter + LDO
-Text Notes 1600 4375 0    50   ~ 0
+Text Notes 1600 4600 0    50   ~ 0
 Current-feedback protection
-Text Notes 1600 4575 0    50   ~ 0
+Text Notes 1600 4800 0    50   ~ 0
 Power monitoring
-Text Notes 1600 4675 0    50   ~ 0
+Text Notes 1600 4900 0    50   ~ 0
 Power-on reset
-Text Notes 1600 4775 0    50   ~ 0
+Text Notes 1600 5000 0    50   ~ 0
 Li-Ion Battery Charger
 Text Label 3825 3175 2    50   ~ 0
 POWER
@@ -248,14 +252,6 @@ F 3 "" H 2250 7275 50  0001 C CNN
 	1    2250 7275
 	1    0    0    -1  
 $EndComp
-Text HLabel 1100 3350 2    50   Output ~ 0
-USB_DATA+
-Text HLabel 1100 3450 2    50   Output ~ 0
-USB_DATA-
-Wire Wire Line
-	1075 3350 1100 3350
-Wire Wire Line
-	1075 3450 1100 3450
 Wire Wire Line
 	1075 3150 1600 3150
 $Comp
@@ -757,10 +753,14 @@ Wire Notes Line
 	6375 2675 7575 2675
 Text Notes 7075 1050 2    100  ~ 20
 Grounds
+Wire Wire Line
+	1075 3350 1600 3350
+Wire Wire Line
+	1075 3450 1600 3450
 Wire Bus Line
 	9700 1975 9700 3425
 Wire Bus Line
-	3275 3425 3275 6675
-Wire Bus Line
 	4150 3550 4150 7025
+Wire Bus Line
+	3275 3425 3275 6675
 $EndSCHEMATC
