@@ -485,4 +485,8 @@ Wire Bus Line
 	5675 1475 5675 2275
 Wire Bus Line
 	1225 1500 5575 1500
+Text HLabel 5800 3525 2    50   Input ~ 0
+~POWER_ALERT
+Text Notes 7000 4825 0    50   ~ 0
+~POWER_ALERT
 $EndSCHEMATC

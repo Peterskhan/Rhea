@@ -802,8 +802,6 @@ Connection ~ 2700 3950
 Wire Notes Line
 	550  5250 4750 5250
 Wire Notes Line
-	535  3250 4750 3250
-Wire Notes Line
 	8200 3250 8200 5250
 Connection ~ 4350 3950
 Wire Notes Line
@@ -1122,9 +1120,15 @@ Wire Wire Line
 	1100 1250 1700 1250
 Wire Wire Line
 	1450 1550 1250 1550
-Wire Bus Line
-	5150 3650 7100 3650
 Connection ~ 1250 1550
 Wire Wire Line
 	1250 1550 1250 1350
+Wire Notes Line
+	4750 3250 550  3250
+Text Label 8525 4100 0    50   ~ 0
+3V3_SYS
+Wire Wire Line
+	9150 4100 8525 4100
+Wire Bus Line
+	5150 3650 7100 3650
 $EndSCHEMATC
