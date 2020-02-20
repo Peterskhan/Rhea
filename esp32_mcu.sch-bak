@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 "Designed by: Peter Gyulai (BSc)"
 $EndDescr
 $Comp
-L RF_Module:ESP32-WROOM-32D U1
+L RF_Module:ESP32-WROOM-32D U12
 U 1 1 5E2DCA0A
 P 3075 3625
-F 0 "U1" H 3075 5206 50  0000 C CNN
+F 0 "U12" H 3075 5206 50  0000 C CNN
 F 1 "ESP32-WROOM-32D" H 3075 5115 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 3075 2125 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 2775 3675 50  0001 C CNN
@@ -48,10 +48,10 @@ NoConn ~ 2475 3925
 NoConn ~ 2475 4025
 NoConn ~ 2475 4125
 $Comp
-L Device:C C1
+L Device:C C8
 U 1 1 5E313C40
 P 1525 2425
-F 0 "C1" H 1640 2471 50  0000 L CNN
+F 0 "C8" H 1640 2471 50  0000 L CNN
 F 1 "C" H 1640 2380 50  0000 L CNN
 F 2 "" H 1563 2275 50  0001 C CNN
 F 3 "~" H 1525 2425 50  0001 C CNN
@@ -308,10 +308,10 @@ PROG_TX
 Text Notes 1250 4025 0    50   ~ 0
 Pins 17-22 are connected to \nthe integrated SPI Flash, and \nare not recommended for \nother uses.
 $Comp
-L power:GNDPWR #PWR0119
+L power:GNDPWR #PWR035
 U 1 1 5E2FCB5C
 P 1525 2575
-F 0 "#PWR0119" H 1525 2375 50  0001 C CNN
+F 0 "#PWR035" H 1525 2375 50  0001 C CNN
 F 1 "GNDPWR" H 1529 2421 50  0000 C CNN
 F 2 "" H 1525 2525 50  0001 C CNN
 F 3 "" H 1525 2525 50  0001 C CNN
@@ -319,10 +319,10 @@ F 3 "" H 1525 2525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR0120
+L power:GNDD #PWR036
 U 1 1 5E2FD35C
 P 3075 5025
-F 0 "#PWR0120" H 3075 4775 50  0001 C CNN
+F 0 "#PWR036" H 3075 4775 50  0001 C CNN
 F 1 "GNDD" H 3079 4870 50  0000 C CNN
 F 2 "" H 3075 5025 50  0001 C CNN
 F 3 "" H 3075 5025 50  0001 C CNN
@@ -473,6 +473,10 @@ Text Notes 7000 6225 0    50   ~ 0
 EIO_INTR
 Text Notes 675  1000 0    200  ~ 40
 Rhea - ESP32 WROOM32D MCU
+Text HLabel 5800 3525 2    50   Input ~ 0
+~POWER_ALERT
+Text Notes 7000 4825 0    50   ~ 0
+~POWER_ALERT
 Wire Bus Line
 	1225 1625 5575 1625
 Wire Bus Line
@@ -485,8 +489,4 @@ Wire Bus Line
 	5675 1475 5675 2275
 Wire Bus Line
 	1225 1500 5575 1500
-Text HLabel 5800 3525 2    50   Input ~ 0
-~POWER_ALERT
-Text Notes 7000 4825 0    50   ~ 0
-~POWER_ALERT
 $EndSCHEMATC

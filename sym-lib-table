@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name rhea_symbols)(type Legacy)(uri ${KIPRJMOD}/rhea_symbols.lib)(options "")(descr ""))
+)
